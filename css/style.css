@@ -1,0 +1,257 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 100vh;
+    background-image: radial-gradient(red , rgb(120, 0, 0));
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+nav{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    margin-top: 20px;
+        width: 80px;
+        height: 80px;
+        transition: 1s ease-in ;
+}
+nav img:hover{
+    rotate: 360deg;
+}
+ul{
+    display: flex;
+    gap: 20px;
+}
+nav a , nav a:visited{
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+nav a:hover{
+    border-radius: 20px;
+    border: solid 5px red;
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+    text-decoration: solid;
+}
+
+
+section{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hpra h1{
+    text-transform: uppercase;
+    margin-bottom:120px;
+    font-size: 80px; 
+}
+.hpra h1:hover{
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgb(41, 2, 234);
+    border: 3px red double;
+    color: red;
+    font-size: 50px; 
+    width: 80%;
+}
+.ilike  {
+    margin-top: 20px;
+    font-size: 120px;
+}
+.hpra p{
+    font-size: 40px;
+    width: 50%;
+    margin-bottom: 40px;
+}
+.hpra a{
+    background-color: yellow;
+    border: 2px solid red;
+    border-radius:20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    padding: 10px;
+}
+.hpra a:hover{
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(183, 255, 0);
+    border-radius:20px;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    padding: 10px;
+}
+.img-cola{
+    animation: cola .4s infinite;
+}
+
+.himg{
+    align-items: center;
+    display: flex;
+}
+.so{
+    width: 50px ;
+    display: flex;
+}
+.proimg{
+    width: 80%;
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}
+.proimg img{
+    width: 100%;
+    height: 100%;
+}
+.testimonial{
+    height: 700px;
+    background-color: black;
+    
+}
+.btitle{
+    margin: 20px auto;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom : solid 2px red;
+     padding-bottom: 20px;
+     width: 400px;
+     margin-bottom: 100px;
+     padding: 50px;
+}
+.allcard{
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 40PX;
+}
+.card{
+    position: relative;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    height: 350px;
+}
+.card img{
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 50%;
+    width: 120px;
+    height: 150px;
+}
+.card p{
+    margin: 20px 10px ;
+    font-size: 20px;
+}
+.stars{
+    color: red;
+}
+@keyframes cola {
+    0%{
+        rotate: 25deg;
+    }
+    
+    50%{
+        rotate: -25deg;
+    }
+    100%{ 
+        rotate: 25deg;
+    }
+}
+@keyframes up {
+    0%{
+      transform: translate(100px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+@keyframes party {
+    0% {
+        opacity: 0%;
+        left: 0px;
+      
+    }
+
+    25% {
+        opacity: 100%;
+        left: 100px;
+        
+       
+    }
+
+    50% {
+        opacity: 0%;
+        left: 0px;
+        
+    }
+
+    75% {
+        opacity: 100%;
+        left: -100px;
+        
+    }
+    80% {
+        opacity: 0%;
+    }
+    100% {
+        opacity:100% ;
+       
+        left: 0px;
+    
+    }
+}
+@keyframes rot {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+.proimg{
+    background-color: black;
+    position: relative;
+    animation: party 5s ;
+}
+.card1 img :hover{
+    right: 10px;
+}
+.card1:hover{
+    rotate: 360deg;
+    transition: 2s ease-in-out;
+    background-color: red;
+}
+.card2 img :hover{
+    right: 10px;
+}
+.card2:hover{
+    rotate: 360deg;
+    transition: 2s ease-in-out;
+    background-color: green;
+}
+.card3 img :hover{
+    right: 10px;
+}
+.card3:hover{
+    rotate: 360deg;
+    transition: 2s ease-in-out;
+    background-color: yellow;
+}
